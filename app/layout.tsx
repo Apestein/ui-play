@@ -1,7 +1,8 @@
 import "./globals.css"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
-import { Header } from "@/components/site-header"
+import { SiteHeader } from "@/components/site-header"
+import { ExamplesNav } from "@/components/examples-nav"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -19,8 +20,13 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Header />
-          {children}
+          <SiteHeader />
+          <main className="flex min-h-screen flex-col items-center justify-between p-24">
+            <div className="container">
+              <ExamplesNav />
+              {children}
+            </div>
+          </main>
         </ThemeProvider>
       </body>
     </html>

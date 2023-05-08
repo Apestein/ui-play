@@ -32,7 +32,6 @@ interface ExamplesNavProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 export function ExamplesNav({ className, ...props }: ExamplesNavProps) {
   const pathname = usePathname()
-
   return (
     <div className={cn("mb-4 flex items-center", className)} {...props}>
       {examples.map((example) => (

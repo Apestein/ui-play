@@ -10,7 +10,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
-export function Header() {
+export function SiteHeader() {
   return (
     <header className="flex justify-around items-center sticky top-0 w-full p-3">
       <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-6xl">
