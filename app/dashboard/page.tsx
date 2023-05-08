@@ -2,6 +2,9 @@ import { TeamSwitcher } from "./components/team-switcher"
 import { MainNav } from "./components/main-nav"
 import { Search } from "./components/search"
 import { CalendarDateRangePicker } from "./components/date-range-picker"
+import { Overview } from "./components/overview"
+import { RecentSales } from "./components/recent-sales"
+import { UserNav } from "./components/user-nav"
 
 export default function DashboardPage() {
   return (
@@ -12,6 +15,9 @@ export default function DashboardPage() {
         <Search />
       </div>
       <CalendarDateRangePicker />
+      <Overview />
+      <RecentSales />
+      <UserNav />
     </div>
   )
 }
