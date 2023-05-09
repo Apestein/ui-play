@@ -12,7 +12,7 @@ import {
 
 export function SiteHeader() {
   return (
-    <header className="flex justify-around items-center sticky top-0 w-full p-3">
+    <header className="container justify-between flex items-center sticky top-0 w-full py-6">
       <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-6xl">
         <span className="text-[hsl(200,100%,60%)]">UI</span>{" "}
         <span className="text-[hsl(280,100%,60%)]">Play</span>
