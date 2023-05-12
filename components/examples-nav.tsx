@@ -8,23 +8,23 @@ import { cn } from "@/lib/utils"
 const examples = [
   {
     name: "Dashboard",
-    href: "/examples/dashboard",
+    href: "/dashboard",
   },
   {
     name: "Cards",
-    href: "/examples/cards",
+    href: "/cards",
   },
   {
     name: "Playground",
-    href: "/examples/playground",
+    href: "/playground",
   },
   {
     name: "Music",
-    href: "/examples/music",
+    href: "/music",
   },
   {
     name: "Authentication",
-    href: "/examples/authentication",
+    href: "/authentication",
   },
 ]
 
