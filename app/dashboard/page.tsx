@@ -1,5 +1,13 @@
 import Image from "next/image"
-import { Activity, CreditCard, DollarSign, Download, Users } from "lucide-react"
+import {
+  Activity,
+  CreditCard,
+  DollarSign,
+  Download,
+  Users,
+  Hourglass,
+  UserPlus,
+} from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import {
@@ -15,8 +23,8 @@ import { TeamSwitcher } from "./components/team-switcher"
 import { MainNav } from "./components/main-nav"
 import { Search } from "./components/search"
 import { CalendarDateRangePicker } from "./components/date-range-picker"
-import { Overview } from "./components/overview"
-import { RecentSales } from "./components/recent-sales"
+import { OverviewBar, OverviewPie } from "./components/overview"
+import { RecentSales, RecentSignUp } from "./components/recent-sales"
 import { UserNav } from "./components/user-nav"
 
 export default function DashboardPage() {
@@ -117,7 +125,7 @@ export default function DashboardPage() {
                   <CardTitle>Overview</CardTitle>
                 </CardHeader>
                 <CardContent className="pl-2">
-                  <Overview />
+                  <OverviewBar />
                 </CardContent>
               </Card>
               <Card className="col-span-3">
@@ -138,12 +146,12 @@ export default function DashboardPage() {
               <Card>
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                   <CardTitle className="text-sm font-medium">
-                    Total Revenue
+                    Sessions
                   </CardTitle>
-                  <DollarSign className="h-4 w-4 text-muted-foreground" />
+                  <Users className="h-4 w-4 text-muted-foreground" />
                 </CardHeader>
                 <CardContent>
-                  <div className="text-2xl font-bold">$45,231.89</div>
+                  <div className="text-2xl font-bold">4,635</div>
                   <p className="text-xs text-muted-foreground">
                     +20.1% from last month
                   </p>
@@ -152,12 +160,12 @@ export default function DashboardPage() {
               <Card>
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                   <CardTitle className="text-sm font-medium">
-                    Subscriptions
+                    Session Average
                   </CardTitle>
-                  <Users className="h-4 w-4 text-muted-foreground" />
+                  <Hourglass className="h-4 w-4 text-muted-foreground" />
                 </CardHeader>
                 <CardContent>
-                  <div className="text-2xl font-bold">+2350</div>
+                  <div className="text-2xl font-bold">00:00:26</div>
                   <p className="text-xs text-muted-foreground">
                     +180.1% from last month
                   </p>
@@ -165,11 +173,13 @@ export default function DashboardPage() {
               </Card>
               <Card>
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-sm font-medium">Sales</CardTitle>
-                  <CreditCard className="h-4 w-4 text-muted-foreground" />
+                  <CardTitle className="text-sm font-medium">
+                    New Sessions
+                  </CardTitle>
+                  <UserPlus className="h-4 w-4 text-muted-foreground" />
                 </CardHeader>
                 <CardContent>
-                  <div className="text-2xl font-bold">+12,234</div>
+                  <div className="text-2xl font-bold">3.05%</div>
                   <p className="text-xs text-muted-foreground">
                     +19% from last month
                   </p>
@@ -177,13 +187,11 @@ export default function DashboardPage() {
               </Card>
               <Card>
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-sm font-medium">
-                    Active Now
-                  </CardTitle>
+                  <CardTitle className="text-sm font-medium">Bounce</CardTitle>
                   <Activity className="h-4 w-4 text-muted-foreground" />
                 </CardHeader>
                 <CardContent>
-                  <div className="text-2xl font-bold">+573</div>
+                  <div className="text-2xl font-bold">72.27%</div>
                   <p className="text-xs text-muted-foreground">
                     +201 since last hour
                   </p>
@@ -196,18 +204,18 @@ export default function DashboardPage() {
                   <CardTitle>Overview</CardTitle>
                 </CardHeader>
                 <CardContent className="pl-2">
-                  <Overview />
+                  <OverviewPie />
                 </CardContent>
               </Card>
               <Card className="col-span-3">
                 <CardHeader>
-                  <CardTitle>Recent Sales</CardTitle>
+                  <CardTitle>Recent SignUps</CardTitle>
                   <CardDescription>
-                    You made 265 sales this month.
+                    You made 265 signups this month.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <RecentSales />
+                  <RecentSignUp />
                 </CardContent>
               </Card>
             </div>
