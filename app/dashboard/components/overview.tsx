@@ -79,21 +79,21 @@ import { PieChart, Pie, Cell, Legend, Tooltip } from "recharts"
 
 export function OverviewPie() {
   const data01 = [
-    { name: "Revenue A", value: 400 },
-    { name: "Revenue B", value: 300 },
-    { name: "Revenue C", value: 300 },
-    { name: "Revenue D", value: 200 },
-    { name: "Revenue E", value: 278 },
-    { name: "Revenue F", value: 189 },
+    { name: "Revenue A", value: Math.floor(Math.random() * 5000) + 1000 },
+    { name: "Revenue B", value: Math.floor(Math.random() * 5000) + 1000 },
+    { name: "Revenue C", value: Math.floor(Math.random() * 5000) + 1000 },
+    { name: "Revenue D", value: Math.floor(Math.random() * 5000) + 1000 },
+    { name: "Revenue E", value: Math.floor(Math.random() * 5000) + 1000 },
+    { name: "Revenue F", value: Math.floor(Math.random() * 5000) + 1000 },
   ]
 
   const data02 = [
-    { name: "Expenditure A", value: 2400 },
-    { name: "Expenditure B", value: 4567 },
-    { name: "Expenditure C", value: 1398 },
-    { name: "Expenditure D", value: 9800 },
-    { name: "Expenditure E", value: 3908 },
-    { name: "Expenditure F", value: 4800 },
+    { name: "Expenditure A", value: Math.floor(Math.random() * 5000) + 1000 },
+    { name: "Expenditure B", value: Math.floor(Math.random() * 5000) + 1000 },
+    { name: "Expenditure C", value: Math.floor(Math.random() * 5000) + 1000 },
+    { name: "Expenditure D", value: Math.floor(Math.random() * 5000) + 1000 },
+    { name: "Expenditure E", value: Math.floor(Math.random() * 5000) + 1000 },
+    { name: "Expenditure F", value: Math.floor(Math.random() * 5000) + 1000 },
   ]
 
   const COLORS = [
@@ -109,7 +109,6 @@ export function OverviewPie() {
       <PieChart>
         <Pie
           dataKey="value"
-          isAnimationActive={false}
           data={data01}
           cx={200}
           outerRadius={80}
