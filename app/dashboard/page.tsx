@@ -28,7 +28,7 @@ import { UserNav } from "./components/user-nav"
 
 export default function DashboardPage() {
   return (
-    <div className="p flex-col rounded-lg border md:flex">
+    <div className="flex-col rounded-lg border md:flex">
       <div className="border-b">
         <div className="flex h-16 items-center px-4">
           <TeamSwitcher />

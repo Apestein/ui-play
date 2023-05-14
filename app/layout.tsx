@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { ExamplesNav } from "@/components/examples-nav"
+import { StyleSwitcher } from "@/components/style-switcher"
 import { cn } from "@/lib/utils"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -31,6 +32,7 @@ export default function RootLayout({
           </main>
           <SiteFooter />
         </ThemeProvider>
+        <StyleSwitcher />
       </body>
     </html>
   )
