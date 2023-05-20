@@ -5,7 +5,6 @@ import { useSelectedLayoutSegments } from "next/navigation"
 
 export function StyleSwitcher() {
   const segments = useSelectedLayoutSegments()
-  console.log(segments)
 
   React.useEffect(() => {
     document.body.removeAttribute("data-section")
