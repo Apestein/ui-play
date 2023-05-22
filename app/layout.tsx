@@ -11,7 +11,8 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
   title: "UI Play",
-  description: "UI playground created with shadcn/ui",
+  description:
+    "UI playground created with Radix, Tailwind, Recharts, TanStack Table, React Hook Form",
 }
 
 export default function RootLayout({

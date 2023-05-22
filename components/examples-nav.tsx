@@ -19,12 +19,8 @@ const examples = [
     href: "/tasks",
   },
   {
-    name: "Music",
-    href: "/music",
-  },
-  {
-    name: "Authentication",
-    href: "/authentication",
+    name: "Forms",
+    href: "/forms",
   },
 ]
 
