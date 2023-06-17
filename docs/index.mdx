@@ -1,36 +1,49 @@
----
-title: CLI
-description: Use the CLI to add components to your project.
----
+<Callout>
 
-## init
+This site is a work in progress, for demoing my UI prowess. Follow me on twitter for web development content and tech advice [@Apestein](https://twitter.com/Apestein_Dev).
 
-Use the `init` command to initialize dependencies for a new project.
+</Callout>
 
-The `init` command installs dependencies, adds the `cn` util, configures `tailwind.config.js`, and CSS variables for the project.
+## Features
 
-```bash
-npx shadcn-ui init
-```
+<div className="my-4">
 
-## add
+Select a feature below to learn more about it.
 
-Use the `add` command to add components to your project.
+</div>
 
-The `add` command adds a component to your project and installs all required dependencies.
+<div className="grid sm:grid-cols-2 gap-4 mt-6">
 
-```bash
-npx shadcn-ui add [component]
-```
+<Card href="/docs">
 
-### Example
+### Documentation
 
-```bash
-npx shadcn-ui add alert-dialog
-```
+This documentation site built using Contentlayer.
 
-You can also run the command without any arguments to view a list of all available components:
+</Card>
 
-```bash
-npx shadcn-ui add
-```
+<Card href="/docs/marketing" disabled>
+
+### Marketing
+
+The marketing site with landing pages.
+
+</Card>
+
+<Card href="/docs/app" disabled>
+
+### App
+
+The dashboard with auth and subscriptions.
+
+</Card>
+
+<Card href="/docs/blog" disabled>
+
+### Blog
+
+The blog built using Contentlayer and MDX.
+
+</Card>
+
+</div>
