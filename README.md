@@ -4,16 +4,15 @@
 
 _Features:_
 
-- Beautifully Designed
-- Fully Accessiable
-- Responsive Design
+-Modern Aesthetic Design
+-Accessibility
+-Responsive
 
 _Technologies Used:_
 
 - NextJS 13
-- Server Components
 - Typescript
-- Radix + Tailwind
+- Tailwind
 - Recharts
 - TanStack Table
 - React Hook Form
