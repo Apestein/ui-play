@@ -1,6 +1,6 @@
-# UI Play (work in progress)
+# UI Play
 
-### UI demo app, built with shadcn/ui. Beautifully designed components built with Radix UI and Tailwind CSS.
+### UI demo app, built with shadcn/ui.
 
 _Features:_
 
