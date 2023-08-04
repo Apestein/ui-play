@@ -4,9 +4,9 @@
 
 _Features:_
 
--Modern Aesthetic Design
--Accessibility
--Responsive
+- Modern Aesthetic Design
+- Accessibility
+- Responsive
 
 _Technologies Used:_
 
